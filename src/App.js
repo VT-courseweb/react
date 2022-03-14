@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
+console.log(React.version);     //리엑트버전확인
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          
         </a>
       </header>
     </div>
