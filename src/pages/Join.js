@@ -1,9 +1,0 @@
-function Join(){
-    return (
-        <div>
-            <h1>Join Page</h1>
-        </div>
-    );
-}
-
-export default Join
