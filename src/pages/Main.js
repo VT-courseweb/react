@@ -12,6 +12,7 @@ function Main(){
     return (
         <div>
             <br></br>
+            {/*부트스트랩 버튼 */}
             <Card>
                 <Card.Header>
                     <Button variant="primary">Primary</Button>
