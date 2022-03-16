@@ -21,7 +21,6 @@ function App() {
             <Route path="/info" element={<Info/>} />
         </Routes>
       </header>
-      <Button>Boot strap</Button>
     </div>
   );
 }
