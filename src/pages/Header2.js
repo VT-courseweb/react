@@ -10,7 +10,21 @@ import {FaReact} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
 import { FiUser } from 'react-icons/fi';
 
+
+import React, {useState, useEffect, useRef}  from 'react';
+import {UseDropDownClick} from "../pages/useDropDownClick";
+import {UserProfiler} from '../assets/person-circle.svg';
+
+
 function Header2(){
+
+    const dropdownRef = useRef(null);
+    const [active, active_ch] = UseDropDownClick(dropdownRef, false);
+
+    const onClick = () => {
+        active_ch(!active);
+    }
+
     return(
         <div>
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
@@ -44,11 +58,14 @@ function Header2(){
                         <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
                         <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
                     </div>
-                    <NavDropdown title="prople" id="navbarScrollingDropdown">
+                    {/* <NavDropdown title="prople" id="navbarScrollingDropdown">
                         <FiUser/>
                         <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action2">Another</NavDropdown.Item>
-                    </NavDropdown>
+                    </NavDropdown> */}
+                    <div className="menu-container">
+                        <img className="menu-trigger" src = {require('../assets/person-circle.svg').default} onClick={onClick} alt="test"/>
+                    </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
