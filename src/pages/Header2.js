@@ -12,7 +12,7 @@ import {BsSearch} from 'react-icons/bs';
 function Header2(){
     return(
         <div>
-            <Navbar fixed="top"  bg="dark" variant="dark" expand="lg"> {/*fixed="top"*/}
+            <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
                 <Container fluid>              
                     <Navbar.Brand href="/"><FaReact/> KKgale</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" fa-pull-left/>{/*네비게이바버튼 생성*/}
