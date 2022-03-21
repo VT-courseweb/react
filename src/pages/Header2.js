@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
+import { FiUser } from 'react-icons/fi';
 
 function Header2(){
     return(
@@ -22,28 +23,33 @@ function Header2(){
                             <FormControl type="search"   placeholder="Search" className=" my-2 my-lg-0" aria-label="Search" ></FormControl>
                             <Button variant="dark" className=" my-2 my-lg-0"><BsSearch/></Button>
                         </Form>
-                        <Nav className="me-auto my-2 my-lg-0"navbarScroll>
+                        <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
                             <Nav.Link href="/Upload">Upload</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Dos">Dos</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
+                            
+                            {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action2">Another</NavDropdown.Item>
                             <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action3">
                                     Something else here
                                 </NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="#" disabled>Link</Nav.Link>
+                            </NavDropdown> */}
+                            
                         </Nav>
-                    
+                        
                     <div>
                         <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
                         <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
                     </div>
-                     </Navbar.Collapse>  
-                    
+                    <NavDropdown title="prople" id="navbarScrollingDropdown">
+                        <FiUser/>
+                        <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action2">Another</NavDropdown.Item>
+                    </NavDropdown>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </div>
