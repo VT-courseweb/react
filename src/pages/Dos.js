@@ -19,7 +19,7 @@ function Dos(){
     return (
         <div>
             <br/>
-            <h3>예시사항과 참고 테스트 모음 !!</h3>
+            <h3>예시사항과 참고 테스트 모음 ~~~~</h3>
             <br/>
             <Header></Header>
             <br/>
