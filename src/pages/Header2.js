@@ -23,8 +23,8 @@ function Header2(){
                             <Button variant="dark" className=" my-2 my-lg-0"><BsSearch/></Button>
                         </Form>
                         <Nav className="me-auto my-2 my-lg-0"navbarScroll>
-                            <Nav.Link href="/Datasets">Datasets</Nav.Link>
-                            <Nav.Link href="/Uplod">Uplod</Nav.Link>
+                            <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
+                            <Nav.Link href="/Upload">Upload</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Dos">Dos</Nav.Link>
                             <NavDropdown title="Link" id="navbarScrollingDropdown">
