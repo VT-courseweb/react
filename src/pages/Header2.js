@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
-import {BiUserCircle} from 'react-icons/Bi';
+import {FaRegUserCircle} from 'react-icons/fa';
 
 
 import React, {useState, useEffect, useRef}  from 'react';
@@ -55,11 +55,11 @@ function Header2(){
                                 </NavDropdown.Item>
                             </NavDropdown> 
                             
-                        
-                        <NavDropdown title={profileImage} id="navbarScrollingDropdown" >
+                        </Nav>
+                        <NavDropdown title={profileImage} id="navbarScrollingDropdown" className="ml-2 mr-2 my-2 my-lg-0" >
                             <NavDropdown.Item href="/profile">profile</NavDropdown.Item>
                         </NavDropdown>
-                    </Nav>
+                    
                     <div>
                         <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
                         <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
