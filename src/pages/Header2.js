@@ -8,13 +8,16 @@ import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
-import { FiUser } from 'react-icons/fi';
+import {BiUserCircle} from 'react-icons/Bi';
 
 
 import React, {useState, useEffect, useRef}  from 'react';
 import {UseDropDownClick} from "../pages/useDropDownClick";
 import {UserProfiler} from '../assets/person-circle.svg';
-
+const profileImage = <div>
+    <img src = {require('../assets/person-circle.svg').default} alt="test"/>
+    
+</div>
 
 function Header2(){
 
@@ -43,29 +46,27 @@ function Header2(){
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Dos">Dos</Nav.Link>
                             
-                            {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
+                        <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action2">Another</NavDropdown.Item>
                             <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action3">
                                     Something else here
                                 </NavDropdown.Item>
-                            </NavDropdown> */}
+                            </NavDropdown> 
                             
-                        </Nav>
                         
+                        <NavDropdown title={profileImage} id="navbarScrollingDropdown" >
+                            <NavDropdown.Item href="/profile">profile</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
                     <div>
                         <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
                         <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
                     </div>
-                    {/* <NavDropdown title="prople" id="navbarScrollingDropdown">
-                        <FiUser/>
-                        <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action2">Another</NavDropdown.Item>
-                    </NavDropdown> */}
-                    <div className="menu-container">
-                        <img className="menu-trigger" src = {require('../assets/person-circle.svg').default} onClick={onClick} alt="test"/>
-                    </div>
+                    {/* <Button variant="primary">
+                            <img className="menu-trigger ml-2 mr-2 my-lg-0" src = {require('../assets/person-circle.svg').default} onClick={onClick} alt="test"/>
+                        </Button> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
