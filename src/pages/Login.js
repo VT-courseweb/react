@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 //import ToastContainer from "react-bootstrap/ToastContainer";
 import Container from 'react-bootstrap/Container';
+import { Link } from "react-router-dom";
+
+
 
 
 function Login(){
@@ -27,10 +30,10 @@ function Login(){
                         <Form.Check type="checkbox" id="disabledFieldsetCheck" label="로그인 유지하기"/>
                     </Form.Group>
                     <br/>
-                    <div className="d-grid gap-1" >
-                        <Button variant="secondary" type="submit" >
-                            Sign In
-                        </Button>
+                    <div className="d-grid gap-1">
+                        {/* <Link to="/"> */}
+                        <Button variant="secondary" type="submit" >Sign In</Button>
+                        {/* </Link> */}
                     </div>
                 </Form>
             </Container>  
