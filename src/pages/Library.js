@@ -12,14 +12,14 @@ function Library(){
                     <FormGroup>
                         <Row className="d-fixed">
                         <FaUserCircle size="5rem"/>
-                        <Col sm="4">
-                        <Form.Control plaintext readOnly defaultValue="사용자등급"/>
+                        <Col sm="4" >
+                        <Form.Control plaintext readOnly defaultValue="사용자등급" className="text-center"/>
                          </Col>
                         <Col sm="4">
-                        <Form.Control plaintext readOnly defaultValue="사용자아이디"/>
+                        <Form.Control plaintext readOnly defaultValue="사용자아이디" className="text-center"/>
                         </Col>
                         <Col sm="4">
-                        <Form.Control plaintext readOnly defaultValue="사용자 주소"/>
+                        <Form.Control plaintext readOnly defaultValue="사용자 주소" className="text-center"/>
                         </Col>
                         </Row>
                     </FormGroup>
