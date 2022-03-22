@@ -6,7 +6,7 @@ function Copywriter(){
             <Navbar bg="dark" variant="dark" expand="lg">
             <Container fluid px-4>
                 <div class="text-muted">Copyright © Your Website 2021</div>
-                <div class="text-muted"> Privacy Policy·Terms & Conditions</div>
+                <div class="text-muted"> VT </div>
             </Container>
             </Navbar>
         </div>
