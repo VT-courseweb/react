@@ -33,7 +33,7 @@ function Header2(){
                         {/* 검색부분 */}
                         <Form className="d-flex">
                             <FormControl type="search"   placeholder="Search" className=" my-2 my-lg-0" aria-label="Search" ></FormControl>
-                            <Button variant="dark" className=" my-2 my-lg-0"><BsSearch/></Button>
+                            <Button variant="primary" className=" my-2 my-lg-0"><BsSearch/></Button>
                         </Form>
                         <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
@@ -58,7 +58,7 @@ function Header2(){
                         </NavDropdown>
                         <div>
                             <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
-                            <Button variant="secondary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
+                            <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
                         </div>
                     </Navbar.Collapse>
                 </Container>

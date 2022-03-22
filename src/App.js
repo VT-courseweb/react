@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header2></Header2>
+      <br/>
       <header className="App-header">
         <Routes>
             <Route exact ={true} path="/" element={<Main/>}/>
@@ -25,6 +26,7 @@ function App() {
             <Route path="/info" element={<Info/>} />
         </Routes>
       </header>
+      <br/>
       <Copywriter></Copywriter>
     </div>
   );
