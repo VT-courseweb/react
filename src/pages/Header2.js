@@ -7,17 +7,11 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
+import {FaUserCircle} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
-import {FaRegUserCircle} from 'react-icons/fa';
-
-
 import React, {useState, useEffect, useRef}  from 'react';
 import {UseDropDownClick} from "../pages/useDropDownClick";
 import {UserProfiler} from '../assets/person-circle.svg';
-const profileImage = <div>
-    <img src = {require('../assets/person-circle.svg').default} alt="test"/>
-    
-</div>
 
 function Header2(){
 
@@ -31,7 +25,8 @@ function Header2(){
     return(
         <div>
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
-                <Container fluid>              
+                <Container fluid> 
+                             
                     <Navbar.Brand href="/"><FaReact/> KKgale</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" fa-pull-left/>{/*네비게이바버튼 생성*/}
                     <Navbar.Collapse id="navbarScroll">{/*네비게이션바 자동접기*/} 
@@ -55,18 +50,16 @@ function Header2(){
                                 </NavDropdown.Item>
                             </NavDropdown> 
                             
-                        </Nav>
-                        <NavDropdown title={profileImage} id="navbarScrollingDropdown" className="ml-2 mr-2 my-2 my-lg-0" >
+                         </Nav>
+                        <NavDropdown title={<FaUserCircle/>} id="navbarScrollingDropdown" >
                             <NavDropdown.Item href="/profile">profile</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/Logout">Logout</NavDropdown.Item>
                         </NavDropdown>
-                    
-                    <div>
-                        <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
-                        <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
-                    </div>
-                    {/* <Button variant="primary">
-                            <img className="menu-trigger ml-2 mr-2 my-lg-0" src = {require('../assets/person-circle.svg').default} onClick={onClick} alt="test"/>
-                        </Button> */}
+                        <div>
+                            <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
+                            <Button variant="secondary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
