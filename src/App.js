@@ -7,7 +7,7 @@ import Header2 from './pages/Header2';
 //import {Button} from "react-bootstrap"; //부트스트랩중 버튼  연결
 import Copywriter from './pages/Copywriter';
 //console.log(React.version);     //리엑트버전확인
-
+import "./index.css";
 
 function App() {
   return (
