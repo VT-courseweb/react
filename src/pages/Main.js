@@ -3,17 +3,43 @@ import Card from "react-bootstrap/Card";
 function Main(){
     return (
         <div >
-           {/* <Card style={{width:'15rem', textAlign:"center" }}>
-               <Card.Img variant="top" src="logo192.png" style={{ width: '15rem'}} ></Card.Img>
-               <Card.Body>
-                   <Card.Title>Card title</Card.Title>
-                   <Card.Text>Card Text: React Image</Card.Text> 
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>   */}
             <h1>mainpage</h1>
+            <br/>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <div class="card-body text-center"> 사이트 소개 부분</div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <div class="card-body text-center"> 이미지나 영상 부분</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card mb-4">
+                        <div class="card-header text-center"> Datasetes 부분</div>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card mb-6">
+                                        <div class="card-header text-center"> hot Datasetes 부분</div>
+                                        <div class="card-body text-center">hot Datasetes 부분</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card mb-6">
+                                        <div class="card-header text-center"> new Datasetes 부분</div>
+                                        <div class="card-body text-center">new Datasetes 부분</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
