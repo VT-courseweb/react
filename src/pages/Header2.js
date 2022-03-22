@@ -36,7 +36,6 @@ function Header2(){
                         </Form>
                         <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
-                            <Nav.Link href="/Upload">Upload</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Dos">Dos</Nav.Link>
                             
@@ -51,7 +50,7 @@ function Header2(){
                             
                          </Nav>
                         <NavDropdown title={<FaUserCircle/>} id="navbarScrollingDropdown" >
-                            <NavDropdown.Item href="/profile">profile</NavDropdown.Item>
+                            <Nav.Link href="/Upload">Upload</Nav.Link>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/Logout">Logout</NavDropdown.Item>
                         </NavDropdown>
