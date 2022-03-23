@@ -4,15 +4,17 @@ import React from 'react';
 import { Route, Routes} from 'react-router-dom';  //라우터
 import { Main, Login, Regester, Datasetes, Upload, Library, Info, Dos } from './pages';
 import Header2 from './pages/Header2';
-//import {Button} from "react-bootstrap"; //부트스트랩중 버튼  연결
 import Copywriter from './pages/Copywriter';
 //console.log(React.version);     //리엑트버전확인
-import "./index.css";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header2></Header2>
+      <div className="App-header">
+        <Header2></Header2>
+      </div>
+      <div className="App-body">
         <Routes>
             <Route exact ={true} path="/" element={<Main/>}/>
             <Route path="/Dos" element={<Dos/>} />
@@ -23,10 +25,10 @@ function App() {
             <Route path="/login" element={<Login/>} />
             <Route path="/info" element={<Info/>} />
         </Routes>
-        <br/>
+      </div>
+      <div className="App-footer">
       <Copywriter></Copywriter>
-      
-      
+      </div>
     </div>
   );
 }
