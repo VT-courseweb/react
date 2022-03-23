@@ -1,21 +1,21 @@
 .App-header {
-    position: static;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 1;
+    /* position: static; */
     left: 0%;
     right: 0%;
 }
 
 .App-body {
-    position: static;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 65px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
 
 .APP-Footer {
-    Position: sticky;
+    position: static;
     width: 100%;
     left: 0%;
     right: 0%;
