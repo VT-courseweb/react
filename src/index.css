@@ -1,9 +1,26 @@
-body {
-    margin: 0px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.index-header {
+    position: fixed;
+    z-index: 1;
+    /* position: static; */
+    left: 0%;
+    right: 0%;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.index-body {
+    width: 100%;
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.index-Footer {
+    position: static;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+}
+
+* {
+    box-sizing: border-box;
 }
