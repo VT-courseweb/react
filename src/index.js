@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // 리액트에 부트스트랩�
 import { Route, Routes} from 'react-router-dom';  //라우터
 import { Main, Login, Regester, Datasetes, Upload, Library, Info, Dos } from './pages';
 import Header2 from './pages/Header2';
+
 import Copywriter from './pages/Copywriter';
 //console.log(React.version);     //리엑트버전확인
 
