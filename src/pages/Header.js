@@ -1,20 +1,18 @@
-// 리액트 link바 ->페이지 이동 
-import {Link} from 'react-router-dom'
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
+import Button from 'react-bootstrap/Button';
+import {BsSearch} from 'react-icons/bs';
+import './Header.css'
 
 function Header()  {
     return (
-    <div> 
-        <ul class="nav">
-          <li class="nav-item">
-            <div class="nav-link active" aria-current="page"><Link to="/">Main</Link></div>
-          </li>
-          <li class="nav-item">
-            <div class="nav-link"><Link to="/login">Login</Link></div>
-          </li>
-          <li class="nav-item">
-            <div class="nav-link"><Link to="/Regester">Regester</Link></div>
-          </li>
-      </ul>  
+    <div>
+      <div className="sidebar col-1">
+      <Form className="d-flex">
+        <FormControl type="search" placeholder="Search"  className="col-2" aria-label="Search" />
+        <Button variant="primary" ><BsSearch/></Button>
+      </Form>
+      </div>
     </div>
     )
 }

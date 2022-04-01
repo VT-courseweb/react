@@ -1,21 +1,19 @@
 .index-header {
     position: fixed;
     z-index: 1;
-    /* position: static; */
     left: 0%;
     right: 0%;
 }
 
 .index-body {
-    width: 100%;
-    padding-top: 65px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 80px;
 }
 
 .index-Footer {
-    position: static;
+    position: fixed;
     width: 100%;
     left: 0%;
     right: 0%;
