@@ -21,7 +21,7 @@ function Dos(){
             <br/>
             <h3>예시사항과 참고 테스트 모음 ~~~~</h3>
             <br/>
-            <Header></Header>
+            {/* <Header></Header> */}
             <br/>
             <Navbar bg="dark" variant="dark">
             <Container>

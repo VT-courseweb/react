@@ -20,7 +20,7 @@ ReactDOM.render(
   <div className="index">
       <div className="index-header">
         <Header2></Header2>
-        {/* <Header></Header> */}
+        <Header></Header> 
       </div>
       <div className="index-body">
         <Routes>

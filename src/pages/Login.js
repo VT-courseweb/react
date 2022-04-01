@@ -49,7 +49,7 @@ function Login(){
                         <Form.Label>소셜 로그인 부분</Form.Label>
                     </Form.Group>
                     <div className="d-grid gap-1" >
-                         <img src="kakao_login_medium.png"></img> 
+                         <img src="kakao_login_medium.png"  ></img> 
                     </div>
                 </Form>
             </Container>
