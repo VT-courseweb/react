@@ -4,7 +4,7 @@ function Copywriter(){
     return(
         <div>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="bottom">
-            <Container fluid>
+            <Container fluid >
                 <div class="text-muted">Copyright © Your Website 2021</div>
                 <div class="text-muted"> VT </div>
             </Container>
