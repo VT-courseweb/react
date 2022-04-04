@@ -9,9 +9,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {FaUserCircle} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
-import React, {useState, useEffect, useRef}  from 'react';
+import React, {useRef}  from 'react';
 import {UseDropDownClick} from "../pages/useDropDownClick";
-import {UserProfiler} from '../assets/person-circle.svg';
+
 
 function Header2(){
 
@@ -26,7 +26,7 @@ function Header2(){
         <div>
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
                 <Container fluid> 
-                    <Navbar.Brand href="/"><FaReact/> KKgale</Navbar.Brand>
+                    <Navbar.Brand href="/"><FaReact/> KKagle</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" fa-pull-left/>{/*네비게이바버튼 생성*/}
                     <Navbar.Collapse id="navbarScroll">{/*네비게이션바 자동접기*/} 
                         {/* 검색부분 */}

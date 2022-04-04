@@ -28,11 +28,11 @@ function Library(){
             <br/>
             <Accordion>
                 <Accordion.Item eventKey="0">
-                <Accordion.Header>최근에 본 것 </Accordion.Header>
+                <Accordion.Header> datasets최근에 본 것 </Accordion.Header>
                 <Accordion.Body>최근에 본 것</Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                <Accordion.Header>다운로드 받은 것 </Accordion.Header>
+                <Accordion.Header>datasets다운로드 받은 것 </Accordion.Header>
                 <Accordion.Body>다운로드 받은 것</Accordion.Body>
                 </Accordion.Item>
             </Accordion>

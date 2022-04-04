@@ -2,10 +2,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-//import ToastContainer from "react-bootstrap/ToastContainer";
 import Container from 'react-bootstrap/Container';
-import { Link } from "react-router-dom";
-// import { TextCenter } from "react-bootstrap-icons;
 import ImageButton from 'react-image-button';
 
 function Login(){
@@ -55,9 +52,9 @@ function Login(){
             </Container>
             <ImageButton ></ImageButton>
         </div>
-    );
+    )
 }
 
-export default Login
+export default Login;
 
 

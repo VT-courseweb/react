@@ -12,8 +12,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import {FaReact} from 'react-icons/fa';
-import Header from "./Header";
+// import Header from "./Header";
 
 function Dos(){
     return (

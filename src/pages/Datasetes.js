@@ -1,64 +1,57 @@
-import Header from './Header';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+import React from 'react'
 import Button from 'react-bootstrap/Button';
-import {BsSearch} from 'react-icons/bs';
-import Table from 'react-bootstrap/Table';
-import {AiOutlineDatabase} from 'react-icons/ai';   
-//import './Header.css'
+import {AiFillHeart} from 'react-icons/ai';
+import {AiOutlineFork} from 'react-icons/ai';   
+import {MdOutlineAddBox} from 'react-icons/md'; 
+
 
 function Datasetes(){
-    
+     
     return (
         <div>
-            <div className="container">
-            </div>
-            <h1>Datasetespage</h1>
-            <Form className="col-xl-10 d-flex">
-                <FormControl type="textAlign"   placeholder="title" className=" col-xl-10 my-lg-0" aria-label="Search" />
-            </Form>
-            <br/>
-            <div class="col-xl-10">
-                <h5>데이터explorer부분</h5>
-                <div class="card mb-auto">
-                <div class="card-header">
-                    <AiOutlineDatabase/> DataTable Example
+            <div class="container">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="cat_2.jpg" style={{maxHeight:"300px",maxWidth:"450px"}} class="card-img"/>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div>
+                            <div class="card-footer">
+                                <Button href="/Datasetesdetail" class="btn btn-primary"><MdOutlineAddBox/>More</Button>{' '}
+                                <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
+                                <Button className="btn btn-danger"  tabindex="0"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                                <Button className="btn btn-primary"  tabindex="0"><AiOutlineFork/> Fork <span>2,048</span></Button>
+                            </div>
+                        </div>
+                    
                 </div>
-                <div class="card-body">
-                <Table striped bordered hover >
-                    <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td colSpan={2}>Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                    </Table>
+                <br/>
+                <div class="col-6">
+                    <div class="card" >
+                        <img src="cat_2.jpg"  class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
+                            </div>
+                            <div>
+                            <div class="card-footer">
+                                <Button href="/Datasetesdetail" class="btn btn-primary"><MdOutlineAddBox/>More</Button>{' '}
+                                <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
+                                <Button className="btn btn-danger"  tabindex="0"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                                <Button className="btn btn-primary"  tabindex="0"><AiOutlineFork/> Fork <span>2,048</span></Button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            
+            </div> 
         </div>
-    );
+    )
 }
-    export default Datasetes
+    export default Datasetes;
