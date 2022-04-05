@@ -9,14 +9,15 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {FaUserCircle} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
+import React from 'react';
 //import React, {useState, useEffect, useRef}  from 'react';
-import React, {useRef}  from 'react';
-import {UseDropDownClick} from "../pages/useDropDownClick";
+// import React, {useRef}  from 'react';
+// import {UseDropDownClick} from "../pages/useDropDownClick";
 // import {UserProfiler} from '../assets/person-circle.svg';
 
 function Header2(){
 
-    const dropdownRef = useRef(null);
+    // const dropdownRef = useRef(null);
     // const [active, active_ch] = UseDropDownClick(dropdownRef, false);
 
     // const onClick = () => {
