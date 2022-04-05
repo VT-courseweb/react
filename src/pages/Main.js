@@ -43,15 +43,15 @@ function Main(){
                     <div className="card-header">Datasetes 부분</div>
                         <div className="card-body text-center">
                             <div className="row">
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 mb-1 mt-1 ml-1 mr-1">
                                     <div className="card mb-6">
                                         <div className="card-header text-center"> 다운로드가 가장 많은 부분</div>
                                         <div className="card-body text-center">다운로드가 가장 많은 부분</div>
                                     </div>
                                 </div>
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 mb-1 mt-1 ml-1 mr-1">
                                     <div className="card mb-6">
-                                        <div className="card-header text-center"> 좋아요가 가장 많은 부분</div>
+                                        <div className="card-header text-center "> 좋아요가 가장 많은 부분</div>
                                         <div className="card-body text-center">좋아요가 가장 많은 부분</div>
                                     </div>
                                 </div>
@@ -65,13 +65,13 @@ function Main(){
                         <div className="card-header text-center"> Code 부분</div>
                         <div className="card-body text-center">
                             <div className="row">
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 mb-1 mt-1 ml-1 mr-1">
                                     <div className="card mb-6">
                                         <div className="card-header text-center"> 다운로드가 가장 많은 Code</div>
                                         <div className="card-body text-center">다운로드가 가장 많은 Code</div>
                                     </div>
                                 </div>
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 mb-1 mt-1 ml-1 mr-1">
                                     <div className="card mb-6">
                                         <div className="card-header text-center"> 좋아요가 가장 많은 Code</div>
                                         <div className="card-body text-center"> 좋아요가 가장 많은 Code</div>

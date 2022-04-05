@@ -38,7 +38,7 @@ function Header2(){
                         </Form>
                         <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
-                            <Nav.Link href="/Upload">Upload</Nav.Link>
+                            {/* <Nav.Link href="/Upload">Upload</Nav.Link> */}
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Docs">Docs</Nav.Link>
                             
@@ -59,7 +59,7 @@ function Header2(){
                         </NavDropdown>
                         <div>
                             <Button variant="primary" className="ml-2 mr-2 my-lg-0" href="/Login">Login</Button>{' '}
-                            <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Regester">Regester</Button>{' '}
+                            <Button variant="primary" className="ml-2 mr-2 my-2 my-lg-0" href="/Register">Register</Button>{' '}
                         </div>
                     </Navbar.Collapse>
                 </Container>

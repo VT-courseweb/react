@@ -43,7 +43,7 @@ function Register() {
     };
     const onChangeUserName = (e) => {
         setUserNameError(false);
-        setUserName(e.target.value)
+        setUserName(e.target.value);
     };
     const onChangeEmail = (e) => {
         const emailRegex = /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
@@ -76,8 +76,8 @@ function Register() {
             <Container className="panel col-md-5 mx-auto" style={{ position: " auto-start" }}>
                 <Form>
                     <Form.Group as={Row} className="mt-3 smb-3">
-                        <Form.Label column sm={3}>UserId</Form.Label>
-                        <Col sm={9}>
+                        <Form.Label column sm={4}>UserId</Form.Label>
+                        <Col sm={8}>
                             <Form.Control maxLength={20} type="input" placeholder="UserID" value={userId} onChange={onChangeUserId} />
                             {userIdError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>아이디는 영문 5자 이상 영문 또는 숫자를 포함해야 합니다.</span>
@@ -85,8 +85,8 @@ function Register() {
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} className=" mt-3 mb-3">
-                        <Form.Label column sm={3}>Password</Form.Label>
-                        <Col sm={9}>
+                        <Form.Label column sm={4}>Password</Form.Label>
+                        <Col sm={8}>
                             <Form.Control maxLength={20} type="password" placeholder="Password" value={password} onChange={onChangePassword} />
 
                             {passwordError && <div className="invalid-input" style={{ color: "#FF0000" }}>
@@ -96,8 +96,8 @@ function Register() {
 
                     </Form.Group>
                     <Form.Group as={Row} className="mt-3 mb-3">
-                        <Form.Label column sm={3}>ConfirmPassword</Form.Label>
-                        <Col sm={9}>
+                        <Form.Label column sm={4}>ConfirPW</Form.Label>{/*ConfirmPword*/}
+                        <Col sm={8}>
                             <Form.Control maxLength={20} type="password" placeholder="Confirm Password" value={confirmPassword} onChange={onChangeConfirmPassword} />
                             {confirmPasswordError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span> 비밀번호가 맞지않습니다.</span>
@@ -105,8 +105,8 @@ function Register() {
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} className="mt-3 mb-3">
-                        <Form.Label column sm={3}>Username</Form.Label>
-                        <Col sm={9}>
+                        <Form.Label column sm={4}>Username</Form.Label>
+                        <Col sm={8}>
                             <Form.Control maxLength={20} type="input" placeholder="Username" value={userName} onChange={onChangeUserName} />
                             {userNameError && <div class="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>필수입니다.</span>
@@ -114,8 +114,8 @@ function Register() {
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} className="mt-3 mb-3">
-                        <Form.Label column sm={3}>Email</Form.Label>
-                        <Col sm={9}>
+                        <Form.Label column sm={4}>Email</Form.Label>
+                        <Col sm={8}>
                             <Form.Control maxLength={50} type="input" placeholder="name@example.com" value={email} onChange={onChangeEmail} />
                             {emailError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>유효한 이메일 형식을 입력하세요.</span>
@@ -128,7 +128,7 @@ function Register() {
                     </div>
                 </Form>
                 <br />
-                <span className="text">Have an account? <Link to="/login" className="link">Sign In</Link></span>
+                <span className="text">이미 가입되어 있나요? <Link to="/login" className="link">Sign In</Link></span>
 
             </Container>
         </div>

@@ -8,7 +8,6 @@ import {BsSearch} from 'react-icons/bs';
 
 function Header(){
   return(
-  <div>
     <ProSidebar>
       <Menu iconShape="square" className='Menu'>
       <Form className="d-flex">
@@ -22,7 +21,6 @@ function Header(){
       <MenuItem>Rewoard</MenuItem>
       </Menu>
   </ProSidebar>
-  </div>
   )
 }
 export default Header;
