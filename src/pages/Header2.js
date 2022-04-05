@@ -40,7 +40,7 @@ function Header2(){
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
                             <Nav.Link href="/Upload">Upload</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
-                            <Nav.Link href="/Dos">Dos</Nav.Link>
+                            <Nav.Link href="/Docs">Docs</Nav.Link>
                             
                         <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action1">Action</NavDropdown.Item>

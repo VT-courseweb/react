@@ -79,7 +79,7 @@ function Register() {
                         <Form.Label column sm={3}>UserId</Form.Label>
                         <Col sm={9}>
                             <Form.Control maxLength={20} type="input" placeholder="UserID" value={userId} onChange={onChangeUserId} />
-                            {userIdError && <div class="invalid-input" style={{ color: "#FF0000" }}>
+                            {userIdError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>아이디는 영문 5자 이상 영문 또는 숫자를 포함해야 합니다.</span>
                             </div>}
                         </Col>
@@ -89,7 +89,7 @@ function Register() {
                         <Col sm={9}>
                             <Form.Control maxLength={20} type="password" placeholder="Password" value={password} onChange={onChangePassword} />
 
-                            {passwordError && <div class="invalid-input" style={{ color: "#FF0000" }}>
+                            {passwordError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>비밀번호는 최소 8자 이상이어야 하며 최소 하나의 문자와 하나의 숫자를 포함해야 합니다.</span>
                             </div>}
                         </Col>
@@ -99,7 +99,7 @@ function Register() {
                         <Form.Label column sm={3}>ConfirmPassword</Form.Label>
                         <Col sm={9}>
                             <Form.Control maxLength={20} type="password" placeholder="Confirm Password" value={confirmPassword} onChange={onChangeConfirmPassword} />
-                            {confirmPasswordError && <div class="invalid-input" style={{ color: "#FF0000" }}>
+                            {confirmPasswordError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span> 비밀번호가 맞지않습니다.</span>
                             </div>}
                         </Col>
@@ -117,7 +117,7 @@ function Register() {
                         <Form.Label column sm={3}>Email</Form.Label>
                         <Col sm={9}>
                             <Form.Control maxLength={50} type="input" placeholder="name@example.com" value={email} onChange={onChangeEmail} />
-                            {emailError && <div class="invalid-input" style={{ color: "#FF0000" }}>
+                            {emailError && <div className="invalid-input" style={{ color: "#FF0000" }}>
                                 <span>유효한 이메일 형식을 입력하세요.</span>
                             </div>}
                         </Col>
