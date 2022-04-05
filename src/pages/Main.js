@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
- //import { Accordion, Col, FormGroup, Row } from "react-bootstrap";
+//import { Accordion, Col, FormGroup, Row } from "react-bootstrap";
+
 function Main(){
     return (
         <div>
@@ -22,11 +23,11 @@ function Main(){
                 </Carousel.Item>
             </Carousel>
             <br/>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="card mb-4">
-                        <div class="card-body text-center"> 사이트 소개 부분</div>
-                        <p class="text-center">Kkgle이란 사이트는 OOO을 위한 사이트로 OOO을 대상으로 하여<br/> OOO을 하고 OOOOOOOOOO울 하는 OOOOOOO한 사이트 이다.</p>
+            <div className="row">
+                <div className="col-xl-12">
+                    <div className="card mb-4">
+                        <div className="card-body text-center"> 사이트 소개 부분</div>
+                        <p className="text-center">Kkgle이란 사이트는 OOO을 위한 사이트로 OOO을 대상으로 하여<br/> OOO을 하고 OOOOOOOOOO울 하는 OOOOOOO한 사이트 이다.</p>
                     </div>
                 </div>
                 {/* <div class="col-xl-6">
@@ -36,22 +37,22 @@ function Main(){
                     </div>
                 </div> */}
             </div>
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="card border-dark mb-4">
-                    <div class="card-header">Datasetes 부분</div>
-                        <div class="card-body text-center">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="card mb-6">
-                                        <div class="card-header text-center"> 다운로드가 가장 많은 부분</div>
-                                        <div class="card-body text-center">다운로드가 가장 많은 부분</div>
+            <div className="row">
+                <div className="col-xl-6">
+                    <div className="card border-dark mb-4">
+                    <div className="card-header">Datasetes 부분</div>
+                        <div className="card-body text-center">
+                            <div className="row">
+                                <div className="col-xl-6">
+                                    <div className="card mb-6">
+                                        <div className="card-header text-center"> 다운로드가 가장 많은 부분</div>
+                                        <div className="card-body text-center">다운로드가 가장 많은 부분</div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6">
-                                    <div class="card mb-6">
-                                        <div class="card-header text-center"> 좋아요가 가장 많은 부분</div>
-                                        <div class="card-body text-center">좋아요가 가장 많은 부분</div>
+                                <div className="col-xl-6">
+                                    <div className="card mb-6">
+                                        <div className="card-header text-center"> 좋아요가 가장 많은 부분</div>
+                                        <div className="card-body text-center">좋아요가 가장 많은 부분</div>
                                     </div>
                                 </div>
                             </div>
@@ -59,21 +60,21 @@ function Main(){
                     </div>
                 </div>
             
-                <div class="col-xl-6">
-                    <div class="card border-dark mb-4">
-                        <div class="card-header text-center"> Code 부분</div>
-                        <div class="card-body text-center">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="card mb-6">
-                                        <div class="card-header text-center"> 다운로드가 가장 많은 Code</div>
-                                        <div class="card-body text-center">다운로드가 가장 많은 Code</div>
+                <div className="col-xl-6">
+                    <div className="card border-dark mb-4">
+                        <div className="card-header text-center"> Code 부분</div>
+                        <div className="card-body text-center">
+                            <div className="row">
+                                <div className="col-xl-6">
+                                    <div className="card mb-6">
+                                        <div className="card-header text-center"> 다운로드가 가장 많은 Code</div>
+                                        <div className="card-body text-center">다운로드가 가장 많은 Code</div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6">
-                                    <div class="card mb-6">
-                                        <div class="card-header text-center"> 좋아요가 가장 많은 Code</div>
-                                        <div class="card-body text-center"> 좋아요가 가장 많은 Code</div>
+                                <div className="col-xl-6">
+                                    <div className="card mb-6">
+                                        <div className="card-header text-center"> 좋아요가 가장 많은 Code</div>
+                                        <div className="card-body text-center"> 좋아요가 가장 많은 Code</div>
                                     </div>
                                 </div>
                             </div>

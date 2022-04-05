@@ -9,25 +9,26 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FaReact} from 'react-icons/fa';
 import {FaUserCircle} from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
+//import React, {useState, useEffect, useRef}  from 'react';
 import React, {useRef}  from 'react';
 import {UseDropDownClick} from "../pages/useDropDownClick";
-
+// import {UserProfiler} from '../assets/person-circle.svg';
 
 function Header2(){
 
     const dropdownRef = useRef(null);
-    const [active, active_ch] = UseDropDownClick(dropdownRef, false);
+    // const [active, active_ch] = UseDropDownClick(dropdownRef, false);
 
-    const onClick = () => {
-        active_ch(!active);
-    }
+    // const onClick = () => {
+    //     active_ch(!active);
+    // }
 
     return(
         <div>
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
                 <Container fluid> 
-                    <Navbar.Brand href="/"><FaReact/> KKagle</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" fa-pull-left/>{/*네비게이바버튼 생성*/}
+                    <Navbar.Brand href="/"><FaReact/> KKgale</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />{/*네비게이바버튼 생성*/}
                     <Navbar.Collapse id="navbarScroll">{/*네비게이션바 자동접기*/} 
                         {/* 검색부분 */}
                         <Form className="d-flex">
@@ -36,6 +37,7 @@ function Header2(){
                         </Form>
                         <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
+                            <Nav.Link href="/Upload">Upload</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Dos">Dos</Nav.Link>
                             
@@ -50,7 +52,7 @@ function Header2(){
                             
                          </Nav>
                         <NavDropdown title={<FaUserCircle/>} id="navbarScrollingDropdown" >
-                            <Nav.Link href="/Upload">Upload</Nav.Link>
+                            <NavDropdown.Item href="/Upload">Upload</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/Logout">Logout</NavDropdown.Item>
                         </NavDropdown>

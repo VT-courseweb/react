@@ -16,13 +16,13 @@ function Datasetesdetail (){
                
             </Form>
             <br/>
-            <div class="col-xl-12 " style={{minWidth:"250px"}}  >
+            <div className="col-xl-12 " style={{minWidth:"250px"}}  >
                 <h5>데이터explorer부분</h5>
-                <div class="card">
-                <div class="card-header">
+                <div className="card">
+                <div className="card-header">
                     <AiOutlineDatabase/> DataTable Example
                 </div>
-                <div class="card-body d-none d-lg-table-cell">
+                <div className="card-body d-none d-lg-table-cell">
                 <Table striped bordered hover >
                     <thead>
                         <tr>

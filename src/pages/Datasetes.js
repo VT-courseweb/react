@@ -9,43 +9,40 @@ function Datasetes(){
      
     return (
         <div>
-            <div class="container">
-                <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-4">
-                            <img src="cat_2.jpg" style={{maxHeight:"300px",maxWidth:"450px"}} class="card-img"/>
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Lorem</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
-                            </div>
+            <div className="Container">
+                <div className="card">
+                    <div className="col-4">
+                        <img src="cat_2.jpg" style={{maxHeight:"300px", maxWidth:"450px"}} alt="" ></img>
+                    </div>
+                    <div className="col-8">
+                        <div className="card-body">
+                            <h5 className="card-title">Lorem</h5>
+                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
                         </div>
                     </div>
-                        <div>
-                            <div class="card-footer">
-                                <Button href="/Datasetesdetail" class="btn btn-primary"><MdOutlineAddBox/>More</Button>{' '}
-                                <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
-                                <Button className="btn btn-danger"  tabindex="0"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
-                                <Button className="btn btn-primary"  tabindex="0"><AiOutlineFork/> Fork <span>2,048</span></Button>
-                            </div>
+                    <div>
+                        <div className="card-footer">
+                            <Button href="/Datasetesdetail" className="btn btn-primary">More<MdOutlineAddBox/></Button>{' '}
+                            <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
+                            <Button className="btn btn-danger" > <AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                            <Button className="btn btn-primary" ><AiOutlineFork/> Fork <span>2,048</span></Button>
                         </div>
-                    
+                    </div>
                 </div>
                 <br/>
-                <div class="col-6">
-                    <div class="card" >
-                        <img src="cat_2.jpg"  class="card-img-top" />
-                            <div class="card-body">
-                                <h5 class="card-title">Lorem</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
+                <div className="col-6">
+                    <div className="card" >
+                        <img src="cat_2.jpg"  className="card-img-top" alt=""/>
+                            <div className="card-body">
+                                <h5 className="card-title">Lorem</h5>
+                                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas sed sem ut malesuada.</p>
                             </div>
                             <div>
-                            <div class="card-footer">
-                                <Button href="/Datasetesdetail" class="btn btn-primary"><MdOutlineAddBox/>More</Button>{' '}
+                            <div className="card-footer">
+                                <Button href="/Datasetesdetail" className="btn btn-primary">More<MdOutlineAddBox/></Button>{' '}
                                 <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
-                                <Button className="btn btn-danger"  tabindex="0"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
-                                <Button className="btn btn-primary"  tabindex="0"><AiOutlineFork/> Fork <span>2,048</span></Button>
+                                <Button className="btn btn-danger"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                                <Button className="btn btn-primary"  ><AiOutlineFork/> Fork <span>2,048</span></Button>
                             </div>
                         </div>
                     </div>

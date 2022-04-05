@@ -6,8 +6,8 @@ function Library(){
     return (
         <div>
             <h1>Librarypage</h1>
-            <div class="col-xl-12 ">
-                <div class="card">
+            <div className="col-xl-12 ">
+                <div className="card">
                     <FormGroup>
                         <Row className="d-fixed">
                         <FaUserCircle size="5rem"/>
