@@ -28,7 +28,7 @@ function Header2(){
         <div>
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
                 <Container fluid> 
-                    <Navbar.Brand href="/"><FaReact/> KKgale</Navbar.Brand>
+                    <Navbar.Brand href="/"><FaReact/> Kkaggle</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />{/*네비게이바버튼 생성*/}
                     <Navbar.Collapse id="navbarScroll">{/*네비게이션바 자동접기*/} 
                         {/* 검색부분 */}
@@ -37,7 +37,7 @@ function Header2(){
                             <Button variant="primary" className=" my-2 my-lg-0"><BsSearch/></Button>
                         </Form>
                         <Nav className="me-auto" navbarScroll >
-                            <Nav.Link href="/Datasetes">Datasetes</Nav.Link>
+                            <Nav.Link href="/Datasets">Datasets</Nav.Link>
                             {/* <Nav.Link href="/Upload">Upload</Nav.Link> */}
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Docs">Docs</Nav.Link>

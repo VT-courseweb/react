@@ -4,16 +4,16 @@ import {AiFillHeart} from 'react-icons/ai';
 import {AiOutlineFork} from 'react-icons/ai';   
 import {MdOutlineAddBox} from 'react-icons/md'; 
 
-function Datasetes(){
+function Datasets(){
      
     return (
         <div>
             <div className="Container">
                 <div className="card" >
-                    <div className="col-12">
+                    <div className="col-12 col-sm-12 col-xl-12 col-lg-12">
                         <div className='row'>
-                            <div className="col-6">
-                                <img src="cat_2.jpg" className="card-img" alt=""  ></img>
+                            <div className="col-6 col-sm-6 col-xl-6 col-lg-6">
+                                <img src="cat_2.jpg"  className="card-img" alt=""/>
                             </div>
                             <div className="col-6">
                                 <div className="card-body">
@@ -42,9 +42,9 @@ function Datasetes(){
                 <br/>
                 <div className="col-5">
                     <div className="card" >
-                        <img src="cat_2.jpg"  className="card-img-top" alt=""/>
+                        <img src="cat_2.jpg"  className="card-img" alt=""/>
                             <div className="card-body">
-                            <h5 className="card-title">title</h5>
+                                <h5 className="card-title">title</h5>
                                     <p className="card-text">요약 내용</p>
                                     <hr/>
                                     <h6 className="card-text" >생성자</h6>
@@ -70,4 +70,4 @@ function Datasetes(){
         </div>
     )
 }
-    export default Datasetes;
+    export default Datasets;

@@ -3,7 +3,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Table from 'react-bootstrap/Table';
 import {AiOutlineDatabase} from 'react-icons/ai';   
 
-function Datasetesdetail (){
+function Datasetsdetail (){
     return (
         <div>
             <div className="container">
@@ -59,4 +59,4 @@ function Datasetesdetail (){
         </div>
     );
 }
-    export default Datasetesdetail
+    export default Datasetsdetail
