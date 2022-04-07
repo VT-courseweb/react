@@ -1,11 +1,12 @@
 import { Accordion, Col, FormGroup, Row } from "react-bootstrap";
 import {FaUserCircle} from 'react-icons/fa';
 import Form from 'react-bootstrap/Form';
-
+import "../index.css"
 function Library(){
     return (
         <div>
             <h1>Librarypage</h1>
+            <div className="Library">
             <div  className="col-12 ">
                 <div  className="card ">
                     <FormGroup>
@@ -75,6 +76,7 @@ function Library(){
                 </Accordion.Item>
             </Accordion>
             <br/>
+            </div>
         </div>
     );
 }

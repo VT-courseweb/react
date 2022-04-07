@@ -68,15 +68,7 @@ function Upload(){
             <Form.Group controlId="formbtn" className="mb-3">
                     <div className="mb-2" align="right">
                         <Button variant="secondary" >임시저장</Button> {" "}
-                        <Button variant="secondar
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        y">저장 </Button>
+                        <Button variant="secondary">저장 </Button>
                     </div>
             </Form.Group> 
             <br/>

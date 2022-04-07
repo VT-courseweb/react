@@ -8,14 +8,28 @@ function Datasets(){
      
     return (
         <div>
-            <div className="Container">
+        <div className="Container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-md-1 sidebar">
+                        <ul class="nav nav-sidebar">
+                            <li class="active"><a href="#">최근일</a></li>
+                            <li><a href="#">조회순</a></li>
+                            <li><a href="#">다운로드순 </a></li>
+                            <li><a href="#">Reward</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="card_mian">
                 <div className="card" >
-                    <div className="col-12 col-sm-12 col-xl-12 col-lg-12">
+                    <div className="col-12">
                         <div className='row'>
-                            <div className="col-6 col-sm-6 col-xl-6 col-lg-6">
-                                <img src="cat_2.jpg"  className="card-img" alt=""/>
+                            <div className="col-4">
+                            <img className="d-block"  src="cat_2.jpg" alt="Third slide" style={{height: "215px" ,width:"400px"}} />
+                           
                             </div>
-                            <div className="col-6">
+                            <div className="col-8">
                                 <div className="card-body">
                                     <h5 className="card-title">title</h5>
                                     <p className="card-text">요약 내용</p>
@@ -42,7 +56,9 @@ function Datasets(){
                 <br/>
                 <div className="col-5">
                     <div className="card" >
-                        <img src="cat_2.jpg"  className="card-img" alt=""/>
+                            <figure class="image is-128x128">
+                                <img src="https://bulma.io/images/placeholders/128x128.png"/>
+                            </figure>
                             <div className="card-body">
                                 <h5 className="card-title">title</h5>
                                     <p className="card-text">요약 내용</p>
@@ -66,6 +82,7 @@ function Datasets(){
                         </div>
                     </div>
                 </div>
+            </div>
             </div> 
         </div>
     )

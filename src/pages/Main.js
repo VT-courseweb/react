@@ -1,11 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
 //import { Accordion, Col, FormGroup, Row } from "react-bootstrap";
-
+import "../index.css"
 function Main(){
     return (
         <div>
             <h1>mainpage</h1>
             <br/>
+            <div className="Main">
             <Carousel variant="info">{/*variant="dark"*/}
                 <Carousel.Item >
                     <img className="d-block w-100" src="field.jpg" alt="First slide" style={{height: "600px"}} />
@@ -81,6 +82,7 @@ function Main(){
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

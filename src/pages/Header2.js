@@ -23,9 +23,9 @@ function Header2(){
     // const onClick = () => {
     //     active_ch(!active);
     // }
-
     return(
         <div>
+            <div className="Header2">
             <Navbar bg="dark" variant="dark" expand="lg"> {/*fixed="top"-> top부분에 고정하기*/}
                 <Container fluid> 
                     <Navbar.Brand href="/"><FaReact/> Kkaggle</Navbar.Brand>
@@ -64,6 +64,7 @@ function Header2(){
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            </div>
         </div>
     )
 }
