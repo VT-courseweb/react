@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // powershell에 작성 npm install bootstrap후
 import 'bootstrap/dist/css/bootstrap.min.css'; // 리액트에 부트스트랩연결시 
 import { Route, Routes} from 'react-router-dom';  //라우터
-import { Main, Login, Register, Datasets,Datasetsdetail, Upload, Library, Info, Docs } from './pages';
+import { Main, Login, Register, Datasets,Datasetsdetail, Code,Codedetail, Upload, Library, Info, Docs } from './pages';
 import Header2 from './pages/Header2';
 // import Header from './pages/Header';
 import Copywriter from './pages/Copywriter';
@@ -29,6 +29,8 @@ ReactDOM.render(
             <Route path="/Library" element={<Library/>} />
             <Route path="/Datasets" element={<Datasets/>} />
             <Route path="/Datasetsdetail" element={<Datasetsdetail/>} />
+            <Route path="/Code" element={<Code/>} />
+            <Route path="/Codedetail" element={<Codedetail/>} />
             <Route path="/Upload" element={<Upload/>} />
             <Route path="/Register" element={<Register/>} />
             <Route path="/login" element={<Login/>} />

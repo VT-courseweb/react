@@ -38,7 +38,7 @@ function Header2(){
                         </Form>
                         <Nav className="me-auto" navbarScroll >
                             <Nav.Link href="/Datasets">Datasets</Nav.Link>
-                            {/* <Nav.Link href="/Upload">Upload</Nav.Link> */}
+                            <Nav.Link href="/Code">Code</Nav.Link>
                             <Nav.Link href="/Library">Library</Nav.Link>
                             <Nav.Link href="/Docs">Docs</Nav.Link>
                             
