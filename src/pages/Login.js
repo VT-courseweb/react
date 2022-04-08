@@ -36,7 +36,7 @@ function Login(){
                 </Form>
                 <div className="mt-3 mb-3" style={{textAlign:"center"}}>
                     <p><span> 아직 회원이 아니신가요? </span><a href="./Register"> 가입하기 </a></p>
-                    <p><span> 비밀 번호를 잊으셨나요? </span>번호 찾기 </p>
+                    <p><span> 비밀 번호를 잊으셨나요? </span><a href="./FindPW">번호 찾기</a> </p>
                 </div>
             </Container>
             <hr/>

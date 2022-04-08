@@ -6,6 +6,6 @@ export {default as Library} from './Library';
 export {default as Docs} from './Docs';
 export {default as Login} from './Login';
 export {default as Register} from './Register';
-export {default as Info} from './Info';
+export {default as FindPW} from './FindPW';
 export {default as Datasetsdetail } from './Datasetsdetail';
 export {default as Codedetail } from './Codedetail';
