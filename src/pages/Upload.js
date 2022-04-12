@@ -5,14 +5,18 @@ import Col from 'react-bootstrap/Col';
 import { Row } from 'react-bootstrap';
 import  {Button}  from 'react-bootstrap';
 import {RiDeleteBack2Fill} from 'react-icons/ri';
-//토글 버튼 디자인부분 
-import './Togglebtn.css';
+import {AiFillFileImage} from 'react-icons/ai';
+
+import "../index.css"
+import './Togglebtn.css';//토글 버튼 디자인부분 
+import './Upload.css';
 //파일 업로드호출 
 // import FileUpload from "./FileUpload"
 
 function Upload(){
     return (
         <div>
+            <div className="Upload">
             <Form.Group as={Row} className="mb-3 mt-3" controlId="formtitle">
                 <Col sm="11">
                     <Form.Control type="input" placeholder="Title"/>
@@ -61,17 +65,22 @@ function Upload(){
             <Form.Group controlId="formFileMultiple" className="mb-3 mt-3">
                 <Form.Control type="file" multiple className="mb-3 " />
                 {/*드래그&드롭으로 파일 넣는부분*/}
-                {/* <ImageUpload addFile={this.addFile} files={this.state.files} /> */}
-                {/* <FileUpload addFile={this.addFile} files={this.state.files} /> */}
-                <div style={{border: "3px solid #73AD21"}}>드래그&드롭</div>
+                <div class="upload-box">
+                    <div id="drop-file" class="drag-file">
+                        <AiFillFileImage/>
+                        <p class="message">Drag files to upload</p>
+                        <p>박스 부분만 만들어 둠, 기능 작동 X</p>
+                    </div>
+                </div>
             </Form.Group> 
             <Form.Group controlId="formbtn" className="mb-3">
                     <div className="mb-2" align="right">
-                        <Button variant="secondary" >임시저장</Button> {" "}
+                        <Button variant="secondary">임시저장</Button> {" "}
                         <Button variant="secondary">저장 </Button>
                     </div>
             </Form.Group> 
             <br/>
+            </div>
         </div>
     );
-} export default Upload
+} export default Upload;

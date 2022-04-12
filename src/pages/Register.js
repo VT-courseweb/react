@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
-
+import "../index.css";
 
 function Register() {
 
@@ -73,7 +73,8 @@ function Register() {
 
     return (
         <div>
-            <Container className="panel col-md-5 mx-auto" style={{ position: " auto-start" }}>
+            <div className="Register">
+            <Container className="panel col-md-5 mx-auto">
                 <Form>
                     <Form.Group as={Row} className="mt-3 smb-3">
                         <Form.Label column sm={4}>UserId</Form.Label>
@@ -131,6 +132,8 @@ function Register() {
                 <span className="text">이미 가입되어 있나요? <Link to="/login" className="link">Sign In</Link></span>
 
             </Container>
+            <br/>
+            </div>
         </div>
     );
 }

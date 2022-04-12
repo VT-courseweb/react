@@ -4,19 +4,19 @@ import "../index.css"
 function Main(){
     return (
         <div>
+            <div className="Main">
             <h1>mainpage</h1>
             <br/>
-            <div className="Main">
             <Carousel variant="info">{/*variant="dark"*/}
                 <Carousel.Item >
-                    <img className="d-block w-100" src="field.jpg" alt="First slide" style={{height: "600px"}} />
+                    <img className="d-block w-100" src="field.jpg" alt="First slide" style={{height: "400px"}} />
                     {/* <Carousel.Caption>
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item >
-                    <img className="d-block w-100" src="cat.jpg" alt="Third slide" style={{height: "600px"}} />
+                    <img className="d-block w-100" src="cat.jpg" alt="Third slide" style={{height: "400px"}} />
                     <Carousel.Caption>
                         <h5>Second slide label</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

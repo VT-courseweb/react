@@ -4,15 +4,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import React from 'react';
+import "../index.css";
 
 function Login(){
     return (
         <div>
             <h1>Loginpage</h1>
             <br/>
+            <div className="Login">
             <Container className="panel col-md-5 mx-auto" >
                 <Form>
-                    <Form.Group as ={Row} controlId="formPlaintextUserID" className= "mr-1 ml-1 mt-1 mb-1">
+                    <Form.Group as ={Row} controlId="formPlaintextUserID">
                         <Form.Label column sm ={3}>UserID</Form.Label>
                         <Col sm={9}>
                             <Form.Control type="input" placeholder="UserID" />
@@ -50,6 +52,8 @@ function Login(){
                     </div>
                 </Form>
             </Container>
+            <br/>
+            </div>
         </div>
     )
 }

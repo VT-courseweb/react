@@ -1,89 +1,102 @@
-    .index-header {
-        position: fixed;
-        z-index: 1;
-        left: 0%;
-        right: 0%;
-    }
-    
-    .index-body {
-        padding-top: 80px;
-        padding-left: 290px;
-        padding-right: 290px;
-        padding-bottom: 80px;
-    }
-    
-    .index-Footer {
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        left: 0%;
-        right: 0%;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    .Header2 {
-        position: fixed;
-        z-index: 1;
-        left: 0%;
-        right: 0%;
-    }
-    
-    .Main,
-    .Library {
-        padding-top: 80px;
-        padding-left: 290px;
-        padding-right: 290px;
-    }
-    
-    .Copywriter {
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        left: 0%;
-        right: 0%;
-    }
-    
-    .sidebar {
-        display: none;
-        min-height: 768px;
-        position: fixed;
-        left: 0%;
-        right: 0%;
-        top: 51px;
-        bottom: 50px;
-        left: 0;
-        display: block;
-        padding: 20px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: #202020;
-        border-right: 1px solid #202020;
-    }
-    
-    .nav-sidebar {
-        margin-right: -21px;
-        /* 20px padding + 1px border */
-        margin-bottom: 20px;
-        margin-left: -20px;
-    }
-    
-    .nav-sidebar>li>a {
-        padding-right: 20px;
-        padding-left: 20px;
-        text-decoration-line: none;
-        color: white;
-    }
-    
-    .nav-sidebar>.active>a,
-    .nav-sidebar>.active>a:hover,
-    .nav-sidebar>.active>a:focus {
-        color: #fff;
-        background-color: #428bca;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
+/*.index-header {
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    right: 0%;
+}*/
+
+.index-Footer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Header2 {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0%;
+    right: 0%;
+}
+
+
+/* .Main, */
+
+.Main,
+.Library,
+.card_mian,
+.Docs_btn,
+.Upload,
+.Login,
+.Register,
+.Datasetsdetail,
+.Codedetail,
+.FindPWpage {
+    padding-top: 80px;
+    padding-left: 290px;
+    padding-right: 290px;
+    overflow-y: auto;
+}
+
+.Copywriter {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+}
+
+.sidebar {
+    display: none;
+    min-height: 768px;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 4%;
+    bottom: 1%;
+    left: 0;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #202020;
+    border-right: 1px solid #202020;
+}
+
+.nav-sidebar {
+    margin-right: -21px;
+    /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.nav-sidebar>li>a {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration-line: none;
+    color: white;
+}
+
+.nav-sidebar>.active>a,
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.card_mian {
+    max-width: 100%;
+    max-height: 10%;
+    min-width: 25%;
+    min-height: 25%;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+//import './index.css';
 import reportWebVitals from './reportWebVitals';
 // powershell에 작성 npm install bootstrap후
 import 'bootstrap/dist/css/bootstrap.min.css'; // 리액트에 부트스트랩연결시 
