@@ -57,8 +57,8 @@ function Datasets(){
                             <div className="card-footer">
                                 <Button href="./Datasetsdetail" className="btn btn-primary">More<MdOutlineAddBox/></Button>{' '}
                                 <Button className="btn btn-secondary">라이센스 여부</Button>{' '}
-                                <Button className="btn btn-danger" > <AiFillHeart/>Like <span>2,048</span></Button>{' '}
-                                <Button className="btn btn-primary" ><AiOutlineFork/> Fork <span>2,048</span></Button>
+                                <Button className="btn btn-danger" ><AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                                <Button className="btn btn-info" ><AiOutlineFork/> Fork <span>2,048</span></Button>
                             </div>
                     </div>
                     <br/>
@@ -82,8 +82,8 @@ function Datasets(){
                                 <div className="card-footer">
                                     <Button href="./Datasetsdetail" className="btn btn-primary ml-1 mr-1 mb-1 ">More<MdOutlineAddBox/></Button>{' '}
                                     <Button className="btn btn-secondary ml-1 mr-1 mb-1">라이센스 여부</Button>{' '}
-                                    <Button className="btn btn-danger ml-1 mr-1 mb-1"> <AiFillHeart/>Like <span>2,048</span></Button>{' '}
-                                    <Button className="btn btn-primary ml-1 mr-1 mb-1"  ><AiOutlineFork/> Fork <span>2,048</span></Button>
+                                    <Button className="btn btn-danger ml-1 mr-1 mb-1"><AiFillHeart/>Like <span>2,048</span></Button>{' '}
+                                    <Button className="btn btn-info ml-1 mr-1 mb-1"  ><AiOutlineFork/> Fork <span>2,048</span></Button>
                                 </div>
                         </div>
                     </div>
