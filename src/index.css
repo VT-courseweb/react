@@ -5,17 +5,21 @@
     right: 0%;
 }*/
 
-.index-Footer {
+
+/* 풋터(카피라이터 부분) .index-Footer {
     position: fixed;
     z-index: 1;
     width: 100%;
     left: 0%;
     right: 0%;
-}
+} */
 
 * {
     box-sizing: border-box;
 }
+
+
+/*헤더부분*/
 
 .Header2 {
     position: fixed;
@@ -26,7 +30,15 @@
 }
 
 
-/* .Main, */
+/* Main페이지에서 Carousel 이미지 부분*/
+
+.Main_Img {
+    height: 500px;
+    width: 1400px;
+}
+
+
+/*홈페이지의 사이드 */
 
 .Main,
 .Library,
@@ -42,15 +54,22 @@
     padding-left: 290px;
     padding-right: 290px;
     overflow-y: auto;
+    /* overflow-x: auto; */
 }
 
+
+/* 풋터(카피라이터 부분) */
+
 .Copywriter {
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
     width: 100%;
     left: 0%;
     right: 0%;
 }
+
+
+/* datasets,code사이드바 디자인부분 */
 
 .sidebar {
     display: none;
@@ -88,15 +107,4 @@
 .nav-sidebar>.active>a:focus {
     color: #fff;
     background-color: #428bca;
-}
-
-.card_mian {
-    max-width: 100%;
-    max-height: 10%;
-    min-width: 25%;
-    min-height: 25%;
-}
-
-* {
-    box-sizing: border-box;
 }
