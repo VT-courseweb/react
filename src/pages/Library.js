@@ -13,14 +13,17 @@ function Library(){
                         <FormGroup>
                             <Row className="fixed">
                             <FaUserCircle size="5rem"/>
-                            <Col sm="4" lg="4" md="4" >
+                            <Col sm="3" lg="3" md="3" >
                             <Form.Control plaintext  defaultValue="사용자이력" className="text-center"/>
                             </Col>
-                            <Col sm="4" lg="4" md="4">
-                            <Form.Control plaintext  defaultValue="사용자 배지" className="text-center"/>
+                            <Col sm="3" lg="3" md="3">
+                            <Form.Control plaintext  defaultValue="사용자 배지명" className="text-center"/>
                             </Col>
-                            <Col sm="4" lg="4" md="4">
+                            <Col sm="3" lg="3" md="3">
                             <Form.Control plaintext  defaultValue="사용자 포인트" className="text-center"/>
+                            </Col>
+                            <Col sm="3" lg="3" md="3">
+                            <Form.Control plaintext  defaultValue="사용자 정보변경" className="text-center"/>
                             </Col>
                             </Row>
                         </FormGroup>
