@@ -161,7 +161,7 @@ function Main(){
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                    </div>
                                 </Tab>
                                 <Tab eventKey="Down" title="다운로드순" tabClassName="h6">
                                     <br/>
@@ -310,7 +310,7 @@ function Main(){
                         <div className="code-tab">
                             <Tabs defaultActiveKey="new" id="code-tab" >
                                 <Tab eventKey="new" title="최신순" tabClassName="h6">
-                                <br/>
+                                    <br/>
                                     <div className="row">
                                         <div className="col-6">
                                                 <div className="card" >
