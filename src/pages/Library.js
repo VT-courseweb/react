@@ -6,8 +6,6 @@ function Library(){
     return (
         <div>
             <div className="Library">
-                <h1>Librarypage</h1>
-                <br/>
                 <div  className="col-12 ">
                     <div  className="card">
                         <FormGroup>
