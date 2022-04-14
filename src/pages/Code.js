@@ -24,6 +24,10 @@ import {FaCreativeCommonsNc} from 'react-icons/fa'; // 달러 금지 아이콘 -
 import {FaCreativeCommonsSa} from 'react-icons/fa'; // 뒤로 회전 아이콘 -> SA 
 import {FaCreativeCommonsNd} from 'react-icons/fa'; // 같다(=)아이콘    -> ND
 
+
+import Step from './Step';
+import Step2 from './Step2';
+
 function Code(){
     const [value, setValue] = useState([1, 3]);
     const ButtonChange = (val) => setValue(val);
@@ -79,15 +83,7 @@ function Code(){
                                         <h6 className="card-text" >생성자</h6>
                                         <h6 className="card-text" >생성일자 및 등록일자</h6>
                                         <hr/>
-                                        <ButtonGroup type="radio" value={value} onChange={ButtonChange}>
-                                            <Button id="btn btn-1" size="sm" value={1} ><span> 접수대기</span> </Button>
-                                            <FcNext size="51px"/>
-                                            <Button id="btn btn-2" size="sm" value={2} ><span> 접수완료</span> </Button>
-                                            <FcNext size="51px"/>
-                                            <Button id="btn btn-3" size="sm" value={3} ><span> 심사중.. </span> </Button>
-                                            <FcNext size="51px"/>
-                                            <Button id="btn btn-4" size="sm" value={4} ><span> 심사완료</span></Button>
-                                        </ButtonGroup>
+                                        <Step/>
                                     </div>
                                     <div className="card-footer d-grid ">
                                         <Button href="./Codedetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
@@ -107,22 +103,7 @@ function Code(){
                                     <h6 className="card-text" >생성자</h6>
                                     <h6 className="card-text" >생성일자 및 등록일자</h6>
                                     <hr/>
-                                    <ButtonGroup >
-                                        {stepChange.map((radio, idx) => (
-                                        <ToggleButton
-                                            size="sm"
-                                            key={idx}
-                                            id={`radio-${idx}`}
-                                            type="radio"
-                                            variant="outline-primary"
-                                            name="radio"
-                                            value={radio.value}
-                                            checked={stepValue === radio.value}
-                                            onChange={(e) => setStepValue(e.currentTarget.value)}
-                                            >{radio.name}
-                                        </ToggleButton>
-                                        ))}
-                                    </ButtonGroup>
+                                    <Step2/>
                                 </div>
                                 <div className="card-footer text-center ">
                                     <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
@@ -139,34 +120,29 @@ function Code(){
                             </div>
                         </div>
                         <div className="col-3">
-                                                <div className="card" >
-                                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                                        <div className="card-body">
-                                                            <h5 className="card-title">title</h5>
-                                                            <p className="card-text">요약 내용</p>
-                                                            <hr/>
-                                                            <h6 className="card-text" >생성자</h6>
-                                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                            <hr/>
-                                                            <ButtonGroup type="radio" value={value} onChange={ButtonChange}>
-                                                                <Button id="btn btn-1" size="sm" value={1} ><span> 접수대기</span> </Button>
-                                                                <FcNext size="51px"/>
-                                                                <Button id="btn btn-2" size="sm" value={2} ><span> 접수완료</span> </Button>
-                                                                <FcNext size="51px"/>
-                                                                <Button id="btn btn-3" size="sm" value={3} ><span> 심사중.. </span> </Button>
-                                                                <FcNext size="51px"/>
-                                                                <Button id="btn btn-4" size="sm" value={4} ><span> 심사완료</span></Button>
-                                                            </ButtonGroup>
-                                                        </div>
-                                                        <div className="card-footer">
-                                                            <ButtonGroup className="mt-1 mb-1 mr-1 ml-1">
-                                                                <Button href="./Codedetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
-                                                                <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>{' '}
-                                                                <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>{' '}
-                                                                <Button className="btn btn-secondary" size="sm" hei disabled> <FaCreativeCommons size="15px"/> <FaCreativeCommonsBy/> <FaCreativeCommonsNc/> <FaCreativeCommonsSa/>{/*<FaCreativeCommonsNd/> */}<br/>CC BY NC SA{/*ND*/}</Button>
-                                                            </ButtonGroup>
-                                                        </div>
-                                                </div>
+                            <div className="card" >
+                                <img className="card-img"  src="cat.jpg" alt=""/>
+                                <div className="card-body">
+                                    <h5 className="card-title">title</h5>
+                                    <p className="card-text">요약 내용</p>
+                                    <hr/>
+                                    <h6 className="card-text" >생성자</h6>
+                                    <h6 className="card-text" >생성일자 및 등록일자</h6>
+                                    <hr/>
+                                    <Step/>
+                                </div>
+                                <div className="card-footer">
+                                    <ButtonGroup className="mt-1 mb-1 mr-1 ml-1">
+                                        <Button href="./Datasetsdetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
+                                        <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>{' '}
+                                        <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>{' '}
+                                        <Button className="btn btn-secondary" size="sm" disabled> 
+                                        <FaCreativeCommons size="25px"/><FaCreativeCommonsBy/><FaCreativeCommonsNc/><FaCreativeCommonsSa/>
+                                        {/*<FaCreativeCommonsNd/> */}<br/>CCBYNCSA{/*ND*/}
+                                        </Button>
+                                    </ButtonGroup>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-3">
                             <div className="card" >
@@ -178,22 +154,7 @@ function Code(){
                                         <h6 className="card-text" >생성자</h6>
                                         <h6 className="card-text" >생성일자 및 등록일자</h6>
                                         <hr/>
-                                        <ButtonGroup >
-                                            {stepChange.map((radio, idx) => (
-                                            <ToggleButton
-                                                size="sm"
-                                                key={idx}
-                                                id={`radio-${idx}`}
-                                                type="radio"
-                                                variant="outline-primary"
-                                                name="radio"
-                                                value={radio.value}
-                                                checked={stepValue === radio.value}
-                                                onChange={(e) => setStepValue(e.currentTarget.value)}
-                                                >{radio.name}
-                                            </ToggleButton>
-                                            ))}
-                                        </ButtonGroup>
+                                        <Step2/>
                                     </div>
                                     <div className="card-footer d-grid ">
                                         <Button href="./Codedetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}

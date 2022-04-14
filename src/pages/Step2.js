@@ -18,7 +18,6 @@ function Step2(){
         <ButtonGroup>
             {stepChange.map((radio, idx) => (
             <ToggleButton
-                size="sm"
                 key={idx}
                 id={`radio-${idx}`}
                 type="radio"
