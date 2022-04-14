@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import "../index.css";
 import ButtonGroup  from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
+//import ToggleButton from 'react-bootstrap/ToggleButton';
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 
 /* 검색부분*/
@@ -106,7 +106,7 @@ function Code(){
                                     <Step2/>
                                 </div>
                                 <div className="card-footer text-center ">
-                                    <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
+                                    <Button href="./Codedetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
                                     <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/></Button>{' '}
                                     <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>
                                     <div className="text-center d-grid">
@@ -133,7 +133,7 @@ function Code(){
                                 </div>
                                 <div className="card-footer">
                                     <ButtonGroup className="mt-1 mb-1 mr-1 ml-1">
-                                        <Button href="./Datasetsdetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
+                                        <Button href="./Codedetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
                                         <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>{' '}
                                         <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>{' '}
                                         <Button className="btn btn-secondary" size="sm" disabled> 
