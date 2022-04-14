@@ -7,10 +7,10 @@ function Step2(){
     
     const [stepValue, setStepValue] = useState('1');
     const stepChange = [
-        { name: '접수대기', value: '1' },
-        { name: '접수완료', value: '2' },
-        { name: '심사중..', value: '3' },
-        { name: '심사완료', value: '4' },
+        { name:'접수대기', value: '1' },
+        { name:'접수완료', value: '2' },
+        { name:'심사중..', value: '3' },
+        { name:'심사완료', value: '4' },
       ]
 
     return (
@@ -19,13 +19,16 @@ function Step2(){
             {stepChange.map((radio, idx) => (
             <ToggleButton
                 key={idx}
+                size="sm"
                 id={`radio-${idx}`}
                 type="radio"
                 variant="outline-primary"
                 name="radio"
+                style={{fontSize:"10px" }}
                 value={radio.value}
                 checked={stepValue === radio.value}
                 onChange={(e) => setStepValue(e.currentTarget.value)}
+                
             >{radio.name}
             </ToggleButton>))}
         </ButtonGroup>

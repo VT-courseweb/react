@@ -42,7 +42,7 @@ function Datasets(){
     return (
         <div>
             <div className="Container">
-                <div class="row">
+                {/* <div class="row">
                     <div class="col-md-1 col-xs-6 sidebar">
                         <ul class="nav nav-sidebar">
                             <li>
@@ -63,7 +63,7 @@ function Datasets(){
                         </ul>
                     
                     </div>
-                </div>
+                </div> */}
                 
                 <div className="card_mian">
                     <p><font color='red'>저번회의 때 필터 아직 필요없지 않나 이야기가 나오긴함</font></p>
@@ -73,194 +73,41 @@ function Datasets(){
                     </Form>
                     <br/>
                     <div className="row">
-                        <div className="col-3">
-                            <div className="card" >
-                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">title</h5>
-                                        <p className="card-text">요약 내용</p>
-                                        <hr/>
-                                        <h6 className="card-text" >생성자</h6>
-                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                        <hr/>
-                                        <Step/>
-                                    </div>
-                                    <div className="card-footer d-grid ">
-                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                        <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
-                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>
-                                    </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card" >
+                    <div className="col-3">
+                        <div className="card" >
                                 <img className="card-img"  src="cat.jpg" alt=""/>
                                 <div className="card-body">
                                     <h5 className="card-title">title</h5>
                                     <p className="card-text">요약 내용</p>
                                     <hr/>
-                                    <h6 className="card-text" >생성자</h6>
+                                    <h5 className="card-text" >생성자</h5>
                                     <h6 className="card-text" >생성일자 및 등록일자</h6>
                                     <hr/>
-                                    <Step2/>
+                                    <div className="row">
+                                    <div className="license">
+                                    <h5 className="card-text" >라이센스</h5>
+                                    <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
+                                        &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
+                                        <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
+                                        <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND
+                                    </Button>{' '}
+                                    </div>
+                                    <hr/>
+                                        <span> 대회, 진행단계가 있는  경우 나타남 </span>
+                                        <h5 className="card-text col-12">대회배지
+                                        <img className="mt-1 ml-1 mb-1 mr-1 badge_Img" src="ba.png" alt=""/></h5>
+                                        <h5 className="card-text col-12">진행단계<Step2/></h5>
+                                    </div>
                                 </div>
                                 <div className="card-footer text-center ">
-                                    <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
-                                    <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/></Button>{' '}
-                                    <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>
-                                    <div className="text-center d-grid">
-                                        <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
-                                            &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
-                                            <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
-                                            <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND  
-                                        </Button>{' '}
-                                    </div>
+                                    <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/><span>15</span></Button>{' '}
+                                    <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/><span>10</span></Button>{' '}
+                                    <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="15px"/></Button>{' '}
                                 </div>
                             </div>
                         </div>
-                        <div className="col-3">
-                            <div className="card" >
-                                <img className="card-img"  src="cat.jpg" alt=""/>
-                                <div className="card-body">
-                                    <h5 className="card-title">title</h5>
-                                    <p className="card-text">요약 내용</p>
-                                        <hr/>
-                                        <h6 className="card-text" >생성자</h6>
-                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                        <hr/>
-                                        <Step/>
-                                        </div>
-                                        <div className="card-footer mt-1 mb-1 mr-1 ml-1">
-                                            <ButtonGroup>
-                                                <Button href="./Datasetsdetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>
-                                                <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>
-                                                <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>
-                                                <Button className="btn btn-secondary" size="sm" disabled> 
-                                                <FaCreativeCommons size="25px"/><FaCreativeCommonsBy/><FaCreativeCommonsNc/><FaCreativeCommonsSa/>
-                                                {/*<FaCreativeCommonsNd/> */}<br/>CCBYNCSA{/*ND*/}
-                                                </Button>
-                                            </ButtonGroup>
-                                        </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card" >
-                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">title</h5>
-                                        <p className="card-text">요약 내용</p>
-                                        <hr/>
-                                        <h6 className="card-text" >생성자</h6>
-                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                        <hr/>
-                                        <Step2/>
-                                    </div>
-                                    <div className="card-footer d-grid ">
-                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>{' '}
-                                        <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div className="row">
-                            <div className="col-3">
-                                <div className="card" >
-                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">title</h5>
-                                            <p className="card-text">요약 내용</p>
-                                            <hr/>
-                                            <h6 className="card-text" >생성자</h6>
-                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                            <hr/>
-                                            <Step2/>
-                                        </div>
-                                        <div className="card-footer d-grid ">
-                                            <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
-                                            <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                            <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>
-                                        </div>
-                                </div>
-                            </div>
-                            <div className="col-3">
-                                <div className="card" >
-                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">title</h5>
-                                        <p className="card-text">요약 내용</p>
-                                        <hr/>
-                                        <h6 className="card-text" >생성자</h6>
-                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                        <hr/>
-                                        <Step/>
-                                    </div>
-                                    <div className="card-footer text-center ">
-                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
-                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/></Button>{' '}
-                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>
-                                        <div className="text-center d-grid">
-                                            <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
-                                                &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
-                                                <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
-                                                <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND  
-                                            </Button>{' '}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-3">
-                                <div className="card" >
-                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">title</h5>
-                                        <p className="card-text">요약 내용</p>
-                                        <hr/>
-                                        <h6 className="card-text" >생성자</h6>
-                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                        <hr/>
-                                        <Step2/>
-                                    </div>
-                                    <div className="card-footer">
-                                        <ButtonGroup className="mt-1 mb-1 mr-1 ml-1">
-                                            <Button href="./Datasetsdetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
-                                            <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>{' '}
-                                            <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>{' '}
-                                            <Button className="btn btn-secondary" size="sm" disabled> 
-                                            <FaCreativeCommons size="25px"/><FaCreativeCommonsBy/><FaCreativeCommonsNc/><FaCreativeCommonsSa/>
-                                            {/*<FaCreativeCommonsNd/> */}<br/>CCBYNCSA{/*ND*/}
-                                            </Button>
-                                        </ButtonGroup>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-3">
-                                <div className="card" >
-                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">title</h5>
-                                            <p className="card-text">요약 내용</p>
-                                            <hr/>
-                                            <h6 className="card-text" >생성자</h6>
-                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                            <hr/>
-                                            <Step/>
-                                        </div>
-                                        <div className="card-footer d-grid ">
-                                            <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                            <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                            <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>{' '}
-                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
-                                        </div>
-                                </div>
-                            </div>
                     </div>
                 </div>
-                <br/>
             </div>
         </div>
     )

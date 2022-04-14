@@ -1,9 +1,9 @@
 import "../index.css"
-import React, { useState } from 'react';
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup  from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
+//import ToggleButton from 'react-bootstrap/ToggleButton';
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 
 import Tabs from 'react-bootstrap/Tabs';
@@ -12,7 +12,7 @@ import Tab from 'react-bootstrap/Tab';
 import {AiFillHeart} from 'react-icons/ai';         //하트 아이콘
 import {MdOutlineAddBox} from 'react-icons/md';     //더하기(+) 아이콘
 import {AiOutlineArrowDown} from 'react-icons/ai';  //다운로드 아이콘
-import {FcNext} from 'react-icons/fc'; // 단계 표시(화살표)아이콘
+
 
 /*라이센스 아이콘*/
 import {FaCreativeCommons} from 'react-icons/fa';   // cc아이콘         -> CC
@@ -32,18 +32,6 @@ import Step from './Step';
 import Step2 from './Step2';
 
 function Main(){
-
-    const [value, setValue] = useState([1, 3]);
-    const ButtonChange = (val) => setValue(val);
-    
-    const [stepValue, setStepValue] = useState('1');
-    const stepChange = [
-        { name: '접수대기', value: '1' },
-        { name: '접수완료', value: '2' },
-        { name: '심사중..', value: '3' },
-        { name: '심사완료', value: '4' },
-      ];
-
     return (
         <div>
             <div className="Main">
@@ -95,24 +83,26 @@ function Main(){
                                     <br/>
                                     <div className="row">
                                         <div className="col-6">
-                                                <div className="card" >
-                                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                                        <div className="card-body">
-                                                            <h5 className="card-title">title</h5>
-                                                            <p className="card-text">요약 내용</p>
-                                                            <hr/>
-                                                            <h6 className="card-text" >생성자</h6>
-                                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                            <hr/>
-                                                            <Step/>
+                                            <div className="card" >
+                                                    <img className="card-img"  src="cat.jpg" alt=""/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">title</h5>
+                                                        <p className="card-text">요약 내용</p>
+                                                        <hr/>
+                                                        <h6 className="card-text" >생성자</h6>
+                                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
+                                                        <hr/>
+                                                        <div className="d-grid">
+                                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>
                                                         </div>
-                                                        <div className="card-footer d-grid ">
-                                                            <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
-                                                            <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                                            <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>
-                                                        </div>
-                                                </div>
+                                                    </div>
+                                                    <div className="card-footer d-grid ">
+                                                        <Step/>
+                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요 15</Button>{' '}
+                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드 24</Button>
+                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox/></Button>{' '}
+                                                    </div>
+                                            </div>
                                         </div>
                                         <div className="col-6">
                                             <div className="card" >
@@ -124,13 +114,26 @@ function Main(){
                                                         <h6 className="card-text" >생성자</h6>
                                                         <h6 className="card-text" >생성일자 및 등록일자</h6>
                                                         <hr/>
-                                                        <Step2/>
+                                                        <h5 className="card-text col-12">대회배지
+                                                        <img className="mt-1 ml-1 mb-1 mr-1 badge_Img" src="ba.png" alt=""/></h5>
+                                                        <h6  className="card-text">진행단계</h6> <p><Step/></p>
+                                                        <h6 className="card-text" >진행단계</h6>
+                                                        <p><Step2/></p>
+                                                        <hr/>
+                                                        <div className="text-center d-grid">{/*d-grid */}
+                                                            <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
+                                                                &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
+                                                                <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
+                                                                <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND  
+                                                            </Button>{' '}
+                                                        </div>
+                                                        
                                                     </div>
                                                     <div className="card-footer text-center ">
-                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox size="15px"/></Button>{' '}
                                                         <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>
-                                                        <div className="text-center d-grid">
+                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>{' '}
+                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="15px"/></Button>{' '}
+                                                         <div className="text-center d-grid">
                                                             <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
                                                                 &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
                                                                 <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
@@ -143,124 +146,80 @@ function Main(){
                                     </div>
                                 </Tab>
                                 <Tab eventKey="Down" title="다운로드순" tabClassName="h6">
-                                    <br/>
-                                    <div className="row">
+                                    <div className="row">   
                                         <div className="col-6">
-                                                <div className="card" >
-                                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                                        <div className="card-body">
-                                                            <h5 className="card-title">title</h5>
-                                                            <p className="card-text">요약 내용</p>
-                                                            <hr/>
-                                                            <h6 className="card-text" >생성자</h6>
-                                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                            <hr/>
-                                                            <Step/>
+                                            <div className="card" >
+                                                <img className="card-img"  src="cat.jpg" alt=""/>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">title</h5>
+                                                    <p className="card-text">요약 내용</p>
+                                                    <hr/>
+                                                    <h5 className="card-text" >생성자</h5>
+                                                    <h6 className="card-text" >생성일자 및 등록일자</h6>
+                                                    <hr/>
+                                                    <div className="row">
+                                                        <div className="license">
+                                                        <h5 className="card-text " >라이센스</h5>
+                                                        <div className="d-grid">
+                                                            <Button className="btn btn-secondary   mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
+                                                                &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
+                                                                <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
+                                                                <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND
+                                                            </Button>{' '}
                                                         </div>
-                                                        <div className="card-footer d-grid ">
-                                                            <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/> <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/><br/>CC BY {/*NC SA ND*/}  </Button>{' '}
-                                                            <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                                            <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>
                                                         </div>
+                                                    <hr/>
+                                                        <span> 대회, 진행단계가 있는  경우 나타남 </span>
+                                                        <h5 className="card-text col-12">대회배지
+                                                        <img className="mt-1 ml-1 mb-1 mr-1 badge_Img" src="ba.png" alt=""/></h5>
+                                                        <h5 className="card-text col-12">진행단계<Step2/></h5>
+                                                    </div>
                                                 </div>
+                                                <div className="card-footer text-center ">
+                                                    <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/><span>15</span></Button>{' '}
+                                                    <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/><span>10</span></Button>{' '}
+                                                    <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="15px"/></Button>{' '}
+                                                </div>
+                                            </div>
                                         </div>
                                         <div className="col-6">
                                             <div className="card" >
-                                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">title</h5>
-                                                        <p className="card-text">요약 내용</p>
-                                                        <hr/>
-                                                        <h6 className="card-text" >생성자</h6>
-                                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                        <hr/>
-                                                        <ButtonGroup >
-                                                            {stepChange.map((radio, idx) => (
-                                                            <ToggleButton
-                                                                size="sm"
-                                                                key={idx}
-                                                                id={`radio-${idx}`}
-                                                                type="radio"
-                                                                variant="outline-primary"
-                                                                name="radio"
-                                                                value={radio.value}
-                                                                checked={stepValue === radio.value}
-                                                                onChange={(e) => setStepValue(e.currentTarget.value)}
-                                                                >{radio.name}
-                                                            </ToggleButton>
-                                                            ))}
-                                                        </ButtonGroup>
+                                                <img className="card-img"  src="cat.jpg" alt=""/>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">title</h5>
+                                                    <p className="card-text">요약 내용</p>
+                                                    <hr/>
+                                                    <h5 className="card-text" >생성자</h5>
+                                                    <h6 className="card-text" >생성일자 및 등록일자</h6>
+                                                    <hr/>
+                                                    <div className="row">
+                                                        <div className="license">
+                                                        <h5 className="card-text " >라이센스</h5>
+                                                        <div className="d-grid">
+                                                            <Button className="btn btn-secondary   mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
+                                                                &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
+                                                                <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
+                                                                <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND
+                                                            </Button>{' '}
+                                                        </div>
+                                                        </div>
+                                                    <hr/>
+                                                        <span> 대회, 진행단계가 있는  경우 나타남 </span>
+                                                        <h5 className="card-text col-12">대회배지
+                                                        <img className="mt-1 ml-1 mb-1 mr-1 badge_Img" src="ba.png" alt=""/></h5>
+                                                        <h5 className="card-text col-12">진행단계<Step/></h5>
                                                     </div>
-                                                    <div className="card-footer text-center">
-                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<br/><MdOutlineAddBox size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="15px"/> <FaCreativeCommonsBy/> {/* <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> */}<br/>CC BY {/*NC SA ND*/}  </Button>{' '}
-                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<br/><AiFillHeart size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<br/><AiOutlineArrowDown size="15px"/></Button>
-                                                    </div>
+                                                </div>
+                                                <div className="card-footer text-center ">
+                                                    <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/><span>15</span></Button>{' '}
+                                                    <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/><span>10</span></Button>{' '}
+                                                    <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="15px"/></Button>{' '}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="Like" title="좋아요순"  tabClassName="h6">
-                                    <br/>
-                                    <div className="row">
-                                        <div className="col-6">
-                                                <div className="card" >
-                                                        <img className="card-img"  src="cat.jpg" alt=""/>
-                                                        <div className="card-body">
-                                                            <h5 className="card-title">title</h5>
-                                                            <p className="card-text">요약 내용</p>
-                                                            <hr/>
-                                                            <h6 className="card-text" >생성자</h6>
-                                                            <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                            <hr/>
-                                                            <Step2/>
-                                                        </div>
-                                                        <div className="card-footer d-grid ">
-                                                            <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                                            <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/> {/* <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> */}<br/>CC BY {/*NC SA ND*/}  </Button>{' '}
-                                                            <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                                            <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div className="col-6">
-                                            <div className="card" >
-                                                    <img className="card-img"  src="cat.jpg" alt=""/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">title</h5>
-                                                        <p className="card-text">요약 내용</p>
-                                                        <hr/>
-                                                        <h6 className="card-text" >생성자</h6>
-                                                        <h6 className="card-text" >생성일자 및 등록일자</h6>
-                                                        <hr/>
-                                                        <ButtonGroup >
-                                                            {stepChange.map((radio, idx) => (
-                                                            <ToggleButton
-                                                                size="sm"
-                                                                key={idx}
-                                                                id={`radio-${idx}`}
-                                                                type="radio"
-                                                                variant="outline-primary"
-                                                                name="radio"
-                                                                value={radio.value}
-                                                                checked={stepValue === radio.value}
-                                                                onChange={(e) => setStepValue(e.currentTarget.value)}
-                                                                >{radio.name}
-                                                            </ToggleButton>
-                                                            ))}
-                                                        </ButtonGroup>
-                                                    </div>
-                                                    <div className="card-footer text-center">
-                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<br/><MdOutlineAddBox size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="15px"/> <FaCreativeCommonsBy/> {/* <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> */}<br/>CC BY {/*NC SA ND*/}  </Button>{' '}
-                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<br/><AiFillHeart size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<br/><AiOutlineArrowDown size="15px"/></Button>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </Tab>
                                 <Tab eventKey="contact" title="기타" tabClassName="h6" disabled>
                                 </Tab>
@@ -289,7 +248,7 @@ function Main(){
                                                         </div>
                                                         <div className="card-footer">
                                                             <ButtonGroup className="mt-1 mb-1 mr-1 ml-1">
-                                                                <Button href="./Codedetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>더보기</Button>{' '}
+                                                                <Button href="./Codedetail" className="btn btn-primary" size="sm"><MdOutlineAddBox/><br/>자세히</Button>{' '}
                                                                 <Button className="btn btn-danger" size="sm"><AiFillHeart/><br/>좋아요</Button>{' '}
                                                                 <Button className="btn btn-info" size="sm"><AiOutlineArrowDown/><br/>다운로드</Button>{' '}
                                                                 <Button className="btn btn-secondary" size="sm" disabled>
@@ -313,9 +272,9 @@ function Main(){
                                                         <Step2/>
                                                     </div>
                                                     <div className="card-footer d-grid ">
-                                                        <Button href="./Codedetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">더보기<MdOutlineAddBox/></Button>{' '}
-                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/></Button>{' '}
-                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/></Button>{' '}
+                                                        <Button href="./Codedetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox/></Button>{' '}
+                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart/>15</Button>{' '}
+                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown/>15</Button>{' '}
                                                         <Button className="btn btn-secondary mt-1 ml-1 mb-1 mr-1" size="sm" disabled><FaCreativeCommons size="25px"/> <FaCreativeCommonsBy/>  <FaCreativeCommonsNc/> <FaCreativeCommonsSa/> <FaCreativeCommonsNd/> <br/>CC BY NC SA ND </Button>{' '}
                                                     </div>
                                             </div>

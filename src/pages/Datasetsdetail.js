@@ -24,7 +24,7 @@ import {FaCreativeCommonsNd} from 'react-icons/fa'; // 같다(=)아이콘    -> 
 //  CC,BY,NC,ND ->  저작자 표시- 비영리 - 변경금지
 
 import Step from './Step';
-import Step2 from './Step2';
+// import Step2 from './Step2';
 
 function Datasetsdetail (){
     return (
@@ -34,12 +34,7 @@ function Datasetsdetail (){
                 <Form className="col-12" >
                     <div className="row">
                         <div className="col-2"><span>진행 단계 디자인 선택요망</span></div>
-                        <div className="col-5">
-                            <Step />
-                        </div>
-                        <div className="col-5">
-                            <Step2/>
-                        </div>
+                        <Step />
                     </div>
                     <br/>
                     <FormControl  type="Text"  placeholder="title" className = " col-xl-12 my-lg-0 mt-1 mb-1 ml-1 mr-1" aria-label="Title" size="lg" readOnly />
