@@ -33,11 +33,11 @@ function Codedetail (){
                 {/* <h1>Datasetespage</h1> */}
                 <Form className="col-12" style={{minWidth:"250px"}}>
                     <div className="row">
-                        <div className="col-2"><span>진행 단계 디자인 선택요망</span></div>
+                        <span>진행 단계 디자인 선택요망</span>
                         <div className="col-5">
                             <Step />
                         </div>
-                        <div className="col-2">
+                        <div className="col-5">
                             <Step2/>
                         </div>
                         <div className="col-2">
