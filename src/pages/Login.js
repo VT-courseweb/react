@@ -7,6 +7,8 @@ import React from 'react';
 import "../index.css";
 
 function Login(){
+   
+    const KAKAO_AUTH_URL="https://kauth.kakao.com/?client_id={3086baea29c26560bb218f8d838982ec}&redirect_uri={http://localhost:3000}&response_type=code";
     return (
         <div>
             <h1>Loginpage</h1>
@@ -47,9 +49,20 @@ function Login(){
                     <Form.Group className= "mr-1 ml-1 mt-1 mb-1" style={{textAlign:"center"}}>
                         <Form.Label>소셜 로그인 부분</Form.Label>
                     </Form.Group>
-                    <div className="d-grid gap-1" >
-                         <img src="kakao_login_medium.png" alt="kakao_login_medium" ></img> 
-                    </div>
+                    {/* curl -X POST "https://kapi.kakao.com/v1/user/logout" \
+	                    -H "Content-Type: application/x-www-form-urlencoded" \
+	                    -H "Authorization: Bearer "
+                        "id":float9876543211234
+                        Logout Redirect URI	: http://localhost:3000
+                        네이티브 앱 키 :    9af3b66fbb681575083e4fc9ed29be88	
+                        REST API 키	   :    ce98ae4e373b7ff2e5947f053a09b71a	
+                        JavaScript 키:	    8a764b966d8c819fedda47dc84088eeb	
+                        Admin 키	  :     3086baea29c26560bb218f8d838982ec
+                        */}
+                        {/* 1.https://kauth.kakao.com/ 2.https://kauth.kakao.com/oauth/authorize  3.https://kauth.kakao.com/v1/user/  4.https://kauth.kakao.com/oauth/token*/}
+                    <a href={KAKAO_AUTH_URL}>
+                        <img src="kakao_login_medium.png" alt="카카오 로그인 버튼"/>
+                    </a>
                 </Form>
             </Container>
             <br/>
