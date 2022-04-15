@@ -32,9 +32,16 @@
 
 /* Main페이지에서 Carousel 이미지 부분*/
 
+.Main>.Carousel {
+    max-height: "500px";
+    max-width: "1400px";
+}
+
 .Main_Img {
-    height: 500px;
-    width: 1400px;
+    /* width: 1400px;
+    height: 500px; */
+    width: 100%;
+    height: auto !important;
 }
 
 .badge_Img {
@@ -59,6 +66,8 @@
     padding-left: 290px;
     padding-right: 290px;
     overflow-y: auto;
+    max-height: "500px";
+    max-width: "1400px";
     /* overflow-x: auto; */
 }
 

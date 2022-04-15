@@ -16,7 +16,8 @@ function Step(){
     
     return (
         <div>
-            <ButtonGroup type="radio" value={value} onChange={ButtonChange} size="sm">
+            <ButtonGroup type="radio" value={value} onChange={ButtonChange} size="sm" fontSize="5px" className="col-lg-12 col-md-6 col-sm-3 col-xs-hidden">
+                 {/* className="col-lg-12 col-md-6 col-sm-3 col-xs-hidden"  */}
                 <Button id="btn btn-1" value={1} ><span> 접수대기</span> </Button>
                 <FcNext size="51px"/>
                 <Button id="btn btn-2" value={2} ><span> 접수완료</span> </Button>

@@ -38,9 +38,9 @@ function Main(){
                 {/* <h1>mainpage</h1>
                 <br/> */}
                 {/*사진 이미지 부분*/}
-                <Carousel variant="info">{/*variant="dark"*/}
+                <Carousel variant="info" className="col-lg-12 col-md-12 col-xs-12" >{/*variant="dark"*/}
                     <Carousel.Item >
-                        <img className="d-block  Main_Img" src="cat_2.jpg" alt="First slide"/>
+                        <img className="d-block  Main_Img" src="cat_2.jpg" alt="First slide" />
                         {/* <Carousel.Caption>
                         <h5>First slide label</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -56,7 +56,7 @@ function Main(){
                 </Carousel>
                 <br/>
                 {/*사이트 소개 부분*/}
-                <div className="col-xl-12">
+                <div className="col-lg-12 col-md-12 col-xs-12">
                     <div className="card">
                         <h4 className="text-center">Kkgle이란?</h4>
                         <h6 className="text-center">
@@ -75,14 +75,14 @@ function Main(){
                 {/*간략하게 보기(Datasets,Code) */}
                 <div className="row">
                     {/*Datasets 부분*/}
-                    <div className="col-6">
+                    <div className="col-lg-12 col-xl-6 col-md-12 col-sm-12 col-xs-12">
                         <div className="h3 text-right">Datasets</div>
                         <div className="datasets-tab">
-                            <Tabs defaultActiveKey="new" id="datasets-tab" >
+                            <Tabs defaultActiveKey="new" id="datasets-tab">
                                 <Tab eventKey="new" title="최신순" tabClassName="h6">
                                     <br/>
                                     <div className="row">
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-xs-12">
                                             <div className="card" >
                                                     <img className="card-img"  src="cat.jpg" alt=""/>
                                                     <div className="card-body">
@@ -104,7 +104,7 @@ function Main(){
                                                     </div>
                                             </div>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-xs-12">
                                             <div className="card" >
                                                     <img className="card-img"  src="cat.jpg" alt=""/>
                                                     <div className="card-body">
@@ -127,22 +127,14 @@ function Main(){
                                                                 <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND  
                                                             </Button>{' '}
                                                         </div>
-                                                        
                                                     </div>
-                                                    <div className="card-footer text-center ">
-                                                        <Button className="btn btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="15px"/></Button>{' '}
-                                                        <Button className="btn btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="15px"/></Button>{' '}
-                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="15px"/></Button>{' '}
-                                                         <div className="text-center d-grid">
-                                                            <Button className="btn btn-secondary  mt-1 ml-1 mb-1 mr-1" size="sm"  disabled>
-                                                                &nbsp;<FaCreativeCommons size="25px"/>&nbsp;<FaCreativeCommonsBy/>&nbsp;<FaCreativeCommonsNc/>&nbsp;
-                                                                <FaCreativeCommonsSa/>&nbsp;<FaCreativeCommonsNd/>
-                                                                <br/>&nbsp;&nbsp;CC&nbsp;BY&nbsp;NC&nbsp;SA&nbsp;ND  
-                                                            </Button>{' '}
-                                                        </div>
+                                                    <div className="card-footer">
+                                                        <Button className="btn-danger mt-1 ml-1 mb-1 mr-1" size="sm">좋아요<AiFillHeart size="10px"/></Button>{' '}
+                                                        <Button className="btn-info mt-1 ml-1 mb-1 mr-1" size="sm">다운로드<AiOutlineArrowDown size="10px"/></Button>{' '}
+                                                        <Button href="./Datasetsdetail" className="btn btn-primary mt-1 ml-1 mb-1 mr-1" size="sm">자세히<MdOutlineAddBox size="10px"/></Button>{' '}
                                                     </div>
                                                 </div>
-                                            </div>
+                                        </div>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="Down" title="다운로드순" tabClassName="h6">
@@ -227,15 +219,15 @@ function Main(){
                         </div>
                     </div>
                     {/*Code 부분*/}
-                    <div className="col-6">
+                    <div className="col-lg-12 col-xl-6 col-md-12 col-sm-12 col-xs-12">
                         <div className="h3 text-right">Code</div>
                         <div className="code-tab">
                             <Tabs defaultActiveKey="new" id="code-tab" >
                                 <Tab eventKey="new" title="최신순" tabClassName="h6">
                                     <br/>
                                     <div className="row">
-                                        <div className="col-6">
-                                                <div className="card" >
+                                        <div className="col-md-6 col-xs-12">
+                                            <div className="card" >
                                                         <img className="card-img"  src="cat.jpg" alt=""/>
                                                         <div className="card-body">
                                                             <h5 className="card-title">title</h5>
@@ -257,9 +249,9 @@ function Main(){
                                                                 </Button>
                                                             </ButtonGroup>
                                                         </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-xs-12">
                                             <div className="card" >
                                                     <img className="card-img"  src="cat.jpg" alt=""/>
                                                     <div className="card-body">
@@ -269,6 +261,7 @@ function Main(){
                                                         <h6 className="card-text" >생성자</h6>
                                                         <h6 className="card-text" >생성일자 및 등록일자</h6>
                                                         <hr/>
+                                                        <Step/><br/>
                                                         <Step2/>
                                                     </div>
                                                     <div className="card-footer d-grid ">

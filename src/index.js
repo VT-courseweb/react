@@ -18,6 +18,7 @@ ReactDOM.render(
   <BrowserRouter>
   <React.StrictMode>
   <div className="index">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
       <div className="index-header">
         <Header2></Header2>
         {/* <Header></Header> */}
